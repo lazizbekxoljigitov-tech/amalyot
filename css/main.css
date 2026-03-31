@@ -785,6 +785,7 @@ body {
   gap: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
+  flex-direction: column;
 }
 
 .privides__one {
@@ -814,18 +815,49 @@ body {
   font-size: 28px;
 }
 
+.privides__main {
+  display: flex;
+  gap: 20px;
+}
+
+.privides__titles {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 @media (max-width: 1000px) {
-  .privides {
+  .privides__main {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
-  .new__head{
+  .new__head {
     font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media (max-width: 680px) {
+  .privides__titles {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .new__titles {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .new__head {
+    justify-content: center;
+    align-items: center];
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
   }
 }
